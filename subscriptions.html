@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscriptions - TrackMySubs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="TrackMySubs Logo" class="logo-img" width="40%">
+            </a>
+            TRACKMYSUBS
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="subscriptions.html">Subscriptions</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="payments.html">Payments</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="wallet.html">Wallet</a></li>
+        </ul>
+        <style>
+            body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav {
+      background-color: #666;
+      padding: 1em 2em;
+  }
+  
+  .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  nav .logo a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  nav .logo-img {
+      height: 60px; /* Adjust the height as needed */
+      margin-right: 20px;
+  }
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+  }
+  
+  nav ul li {
+      margin-left: 2em;
+  }
+  
+  nav ul li a {
+      color: #000;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+      color: #333;
+  }
+  
+  .container {
+      padding: 2em;
+      background-color: #fff;
+      margin: 2em auto;
+      width: 80%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+      margin-top: 0;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  form label {
+      margin-top: 1em;
+  }
+  
+  form input {
+      padding: 0.5em;
+      margin-top: 0.5em;
+  }
+  
+  form button {
+      margin-top: 1em;
+      padding: 0.5em;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+  }
+  
+  form button:hover {
+      background-color: #575757;
+  }
+  
+  .subscription-list {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .subscription-item {
+      background-color: #e9e9e9;
+      padding: 1em;
+      margin-bottom: 1em;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .subscription-item h2 {
+      margin-top: 0;
+  }
+  
+  .subscription-item button {
+      margin-right: 1em;
+  }
+  
+          </style>
+    </nav>
+
+    <div class="container">
+        <h1><b>Your Subscriptions</b></h1>
+        <!-- Carousel -->
+        <div id="subscriptionCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#subscriptionCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#subscriptionCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#subscriptionCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#subscriptionCarousel" data-bs-slide-to="3"></button>
+                <!-- Add more indicators if needed -->
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="subscription-item text-center">
+                        <h2>Spotify Premium</h2>
+                        <p>Cost: $3 SGD/month</p>
+                        <p>Renewal Date: 21/6/2024</p>
+                        <a href="renewed.html" class="buttonnew">Renew Subscription</a>
+                        <a href="cancelled.html" class="buttonsub">Cancel Subscription</a>
+                        <img src="spotify.jpeg", alt="Spotify Premium" style="width:10%; height:auto;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="subscription-item text-center">
+                        <h2>Netflix Premium</h2>
+                        <p>Cost: $15.99 SGD/month</p>
+                        <p>Renewal Date: 14/6/2024</p>
+                        <a href="renewed.html" class="buttonnew">Renew Subscription</a>
+                        <a href="cancelled.html" class="buttonsub">Cancel Subscription</a>
+                        <img src="netflix.jpeg", alt="Netflix Premium" style="width:10%; height:auto;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="subscription-item text-center">
+                        <h2>Disney+ Premium</h2>
+                        <p>Cost: $11.99 SGD/month</p>
+                        <p>Renewal Date: 1/7/2024</p>
+                        <a href="renewed.html" class="buttonnew">Renew Subscription</a>
+                        <a href="cancelled.html" class="buttonsub">Cancel Subscription</a>
+                        <img src="disney.png" alt="Disney+ Premium" style="width:10%; height:auto;">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="subscription-item text-center">
+                        <h2>Youtube Premium</h2>
+                        <p>Cost: $19.99 SGD/month</p>
+                        <p>Renewal Date: 12/8/2024</p>
+                        <a href="renewed.html" class="buttonnew">Renew Subscription</a>
+                        <a href="cancelled.html" class="buttonsub">Cancel Subscription</a>
+                        <img src="youtube.png" alt="Youtube Premium" style="width:10%; height:auto;">
+                    </div>
+                </div>
+            </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#subscriptionCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#subscriptionCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <a href="addsub.html" class="buttonadd">Add New Subscription</a>
+    </div>
+</body>
+</html>
